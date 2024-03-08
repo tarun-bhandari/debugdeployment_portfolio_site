@@ -1,0 +1,36 @@
+
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: red;
+}
+
+
+.left-nav{
+    font-family: "Pacifico", cursive;
+    font-size: 1.3rem;
+}
+
+.left-nav a{
+    text-decoration: none;
+    color: black
+}
+
+.right-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-nav li{
+    list-style: none;
+    padding: 0 2.3rem;
+}
+
+.right-nav li a{
+    text-decoration: none;
+    color: white
+}
+
+
