@@ -7,7 +7,7 @@
     --primary-color: #EFE7DA;
     --secondary-color: #E5625E;
     --accent-color: #004FFF;
-    --white-color: #E7ECEF;
+    --white-color: #F0F7EE;
     --black: #39393A;
 }
 
@@ -73,6 +73,10 @@ body{
     color: var(--accent-color);
 }
 
+.menu-toggle{
+    opacity: 0;
+}
+
 /* --------------------------------------------------------------------- */
 
 .header{
@@ -90,6 +94,7 @@ body{
     align-items: baseline;
     justify-content: flex-start;
     flex-direction: column;
+    max-width: 31rem;
 }
 
 .img-container{
@@ -199,4 +204,94 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+/* --------------------------------------------------------------------- */
+
+@media only screen and (max-width: 768px) {
+    
+    .nav{
+        justify-content: space-around;
+        align-items: flex-start;
+        overflow: auto;
+        height: 10rem;
+        padding: 0.3rem 0;
+    }
+    
+    .menu-toggle{
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        position: absolute;
+        right: 90px;
+        cursor: pointer;
+    }
+
+    .right-nav {
+        display: none;
+        height: 40%;
+    }
+
+    .show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0.5rem 0;
+
+        position: absolute;
+        width: 100%;
+        heught: 20%;
+        top: 50px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        flex-direction: column;
+    }
+    
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2.5rem;
+    }
+
+    .middle-header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .img-container{
+       width: 10rem; 
+        height: 10rem;
+    }
+
+    .project{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact .box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
 

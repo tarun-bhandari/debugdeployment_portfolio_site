@@ -23,6 +23,14 @@ const contact = [
 ]
 
 
+const menu = document.querySelector(".menu-toggle");
+const rNav = document.querySelector(".right-nav");
+menu.addEventListener('click', ()=>{
+    rNav.classList.toggle("show")
+    menu.innerHTML = "&#10005;"
+});
+
+
 let hobby = [
     "read Manga",
     "watch Anime",
