@@ -25,9 +25,11 @@ const contact = [
 
 const menu = document.querySelector(".menu-toggle");
 const rNav = document.querySelector(".right-nav");
+let num = false;
 menu.addEventListener('click', ()=>{
     rNav.classList.toggle("show")
-    menu.innerHTML = "&#10005;"
+    num = !num;
+    menu.innerHTML = num ? "&#10005;" : "&#9776;";
 });
 
 
