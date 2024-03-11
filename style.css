@@ -46,6 +46,8 @@ body{
     background-color: #000;
     font-family: "Poppins", sans-serif;
     color: white;
+    scroll-behaviour: smooth;
+
 }
 
 .header{
@@ -103,11 +105,49 @@ body{
     justify-content: center;
     flex-direction: column;
     background-color: green;
-    height: 80vh;
+    height: 100vh;
 }
 
-.project h2 {
-    padding: 1rem;
+.project p {
+    font-size: 1.3em;
+    padding: 0.5em;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem;
+}
+
+.project-card{
+    border: 1px solid black;
+    padding: 1em;
+    background-color: #fff;
+    color: black;
+    max-width: 20rem;
+}
+
+.project-card img{
+    max-width: 19rem;
+    max-height: 19rem;
+}
+
+.project-card p{
+    font-size: 1em;
+    padding: 0;
+}
+
+.project-card button{
+    padding: 0.3em;
+    border: 1px solid black;
+    background-color: #000;
+    border-radius: 0.3em;
+}
+
+.project-card button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
 }
 
 .contact{
