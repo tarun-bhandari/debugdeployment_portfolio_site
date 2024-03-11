@@ -168,6 +168,10 @@ body{
 }
 
 .footer{
-    color: white;
+    height: 1.8rem;
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
