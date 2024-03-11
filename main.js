@@ -1,4 +1,28 @@
 
+const contact = [
+    {
+        icon: "./assets/twitter.png",
+        link: "https://twitter.com/taruuu_bhandari"
+    },
+    {
+        icon: "./assets/instagram.png",
+        link: "https://www.instagram.com/tar._.u/"
+    },
+    {
+        icon: "./assets/anilist.svg",
+        link: "https://anilist.co/user/iamtaruuuu/mangalist"
+    },
+    {
+        icon: "./assets/github-logo.png",
+        link: "https://github.com/tarun-bhandari"
+    },
+    {
+        icon: "./assets/mail.png",
+        link: "mailto:iamtarunbhandari07@gmail.com"
+    }
+]
+
+
 let hobby = [
     "read Manga",
     "watch Anime",
@@ -20,5 +44,22 @@ function displayHobbies(){
 }
 
 window.onload = displayHobbies
+
+
+function displayContact(){
+    let box = document.getElementById("contact-box");
+    
+    contact.forEach(item => {
+        let a = document.createElement("a");
+        a.href = item.link;
+        let img = document.createElement("img");
+        img.src = item.icon;
+
+        a.appendChild(img)
+        box.appendChild(a)
+    })
+}
+
+displayContact();
 
 

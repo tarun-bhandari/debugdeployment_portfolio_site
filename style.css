@@ -154,7 +154,17 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 100vh;
+    color: black;
+    background-color: #fff;
+}
+
+.contact h3{
+    padding-bottom: 1em;
+}
+.box a img{
+    max-width: 3rem;
 }
 
 .footer{
