@@ -7,7 +7,7 @@
     --primary-color: #EFE7DA;
     --secondary-color: #E5625E;
     --accent-color: #004FFF;
-    --white-color: #F0F7EE;
+    --white-color: #FDFFFC;
     --black: #39393A;
 }
 
@@ -137,6 +137,7 @@ body{
 
 .project p {
     font-size: 1.3em;
+    font-weight: bold;
     padding: 0.5em;
 }
 
@@ -161,6 +162,7 @@ body{
 
 .project-card p{
     font-size: 1em;
+    font-weight: 500;
     padding: 0;
 }
 
@@ -173,8 +175,18 @@ body{
 
 .project-card button a{
     text-decoration: none;
-    color: var(--black);
+    color: var(--white-color);
+    font-weight: bold;
     font-size: 1.3em;
+}
+
+.project-card button:hover{
+    border: 1px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+}
+
+.project-card button a:hover{
+    color: var(--white-color);
 }
 
 /* --------------------------------------------------------------------- */
